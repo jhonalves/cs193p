@@ -18,6 +18,7 @@ struct ContentView: View {
                     CardView(content: emoji)
                 }
             }
+            .foregroundColor(.red)
             Spacer()
             HStack {
                 remove
@@ -27,7 +28,6 @@ struct ContentView: View {
             .font(.largeTitle)
             .padding(.horizontal)
         }
-        .foregroundColor(.blue)
         .padding()
     }
     
@@ -61,7 +61,7 @@ struct CardView: View {
         ZStack {
             if isFaceUp {
                 shape.fill().foregroundColor(.white)
-                shape.stroke(lineWidth: 3)
+                shape.stroke(lineWidth: 4)
                 Text(content).font(.largeTitle)
             } else {
                 shape.fill()
