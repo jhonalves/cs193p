@@ -12,6 +12,7 @@
 		167D448D2735A7B7006143B1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 167D448C2735A7B7006143B1 /* Assets.xcassets */; };
 		167D44902735A7B7006143B1 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 167D448F2735A7B7006143B1 /* Preview Assets.xcassets */; };
 		16B395492738DD3A00AB0925 /* MemoryGame.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16B395482738DD3A00AB0925 /* MemoryGame.swift */; };
+		16B3954B2738E0B100AB0925 /* EmojiMemoryGame.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16B3954A2738E0B100AB0925 /* EmojiMemoryGame.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -21,6 +22,7 @@
 		167D448C2735A7B7006143B1 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		167D448F2735A7B7006143B1 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		16B395482738DD3A00AB0925 /* MemoryGame.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MemoryGame.swift; sourceTree = "<group>"; };
+		16B3954A2738E0B100AB0925 /* EmojiMemoryGame.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmojiMemoryGame.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,6 +60,7 @@
 				167D448A2735A7B5006143B1 /* ContentView.swift */,
 				167D448C2735A7B7006143B1 /* Assets.xcassets */,
 				167D448E2735A7B7006143B1 /* Preview Content */,
+				16B3954A2738E0B100AB0925 /* EmojiMemoryGame.swift */,
 			);
 			path = Memorize;
 			sourceTree = "<group>";
@@ -143,6 +146,7 @@
 				16B395492738DD3A00AB0925 /* MemoryGame.swift in Sources */,
 				167D448B2735A7B5006143B1 /* ContentView.swift in Sources */,
 				167D44892735A7B5006143B1 /* MemorizeApp.swift in Sources */,
+				16B3954B2738E0B100AB0925 /* EmojiMemoryGame.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
