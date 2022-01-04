@@ -44,7 +44,7 @@ struct AspectVGrid<Item, ItemView>: View where ItemView: View, Item: Identifiabl
         repeat {
             let itemWidth = size.width / CGFloat(columnCount)
             let itemHeight = itemWidth / itemAspectRatio
-            if CGFloat (rowCount) * itemHeight < size.height {
+            if CGFloat(rowCount) * itemHeight < size.height {
                 break
             }
             columnCount += 1
@@ -53,7 +53,7 @@ struct AspectVGrid<Item, ItemView>: View where ItemView: View, Item: Identifiabl
         if columnCount > itemCount {
             columnCount = itemCount
         }
-        return floor(size.width / CGFloat (columnCount))
+        return floor(size.width / CGFloat(columnCount))
     }
 }
 
