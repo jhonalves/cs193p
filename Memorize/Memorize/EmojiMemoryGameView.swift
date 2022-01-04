@@ -26,7 +26,9 @@ struct EmojiMemoryGameView: View {
                 CardView(card: card)
                     .padding(4)
                     .onTapGesture {
-                        game.choose(card)
+                        withAnimation(.easeInOut(duration: 1)) {
+                            game.choose(card)
+                        }
                     }
             }
         }
