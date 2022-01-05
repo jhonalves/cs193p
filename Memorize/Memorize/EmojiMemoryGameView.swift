@@ -13,14 +13,20 @@ struct EmojiMemoryGameView: View {
     @Namespace private var dealingNamespace
     
     var body: some View {
-        VStack {
-            gameBody
-            HStack {
-                deckBody
-                Spacer()
-                shuffle.font(.largeTitle)
+        ZStack {
+            VStack {
+                gameBody
+                HStack(alignment: .bottom) {
+                    if dealt.count == game.cards.count {
+                        newGame.font(.title)
+                    } else {
+                        deckBody
+                    }
+                    Spacer()
+                    shuffle.font(.title)
+                }
+                .padding()
             }
-            .padding()
         }
         .padding()
     }
@@ -91,6 +97,15 @@ struct EmojiMemoryGameView: View {
         Button("Shuffle") {
             withAnimation {
                 game.shuffle()
+            }
+        }
+    }
+    
+    var newGame: some View {
+        Button("New Game") {
+            withAnimation {
+                dealt = []
+                game.restart()
             }
         }
     }
